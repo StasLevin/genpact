@@ -24,13 +24,13 @@ namespace GenpactTest.Tests
 
             page = await browser.NewPageAsync();
             await page.GotoAsync("https://en.wikipedia.org/wiki/Playwright_(software)");
-            TestContext.Progress.WriteLine("SetUP completed\n");
+            TestContext.Progress.WriteLine("\nSetUP completed");
         }
 
         [Test]
         public async Task Compare_UI_And_API_Debugging_Features_Word_Count()
         {
-            TestContext.Progress.WriteLine("Starting test...");
+            TestContext.Progress.WriteLine("\nStarting test...");
             var wikiPage = new WikipediaPage(page);
 
             var uiText = await wikiPage.GetDebuggingFeaturesTextAsync();

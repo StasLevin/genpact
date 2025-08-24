@@ -34,8 +34,6 @@ namespace GenpactTest.Utils
         public static int UniqueWordCount(IList<string> text)
         {
             return string.Join(Environment.NewLine, text).Split(' ').Distinct().Count();
-            // var words = text.Split(' ');
-            // return new HashSet<string>(words).Count;
         }
     }
 }

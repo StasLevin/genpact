@@ -24,7 +24,7 @@ A lightweight automation framework with one test that compares **UI** and **API*
 - **Test Automation:** Playwright
 - **.Net Version** 8.0
 
-## How to Run
+## Usage
 1. Clone the repository:
    ```bash
    git clone git@github.com:StasLevin/genpact.git

@@ -3,13 +3,18 @@
 ## Objective
 A lightweight automation framework with one test that compares **UI** and **API** behavior for the [Playwright Wikipedia page](https://en.wikipedia.org/wiki/Playwright_(software)) — specifically, the **"Debugging features"** section.
 
-## Task
+## Requirements ##
+- Clean Architecture
+- Logging (console/file)
+- Bonus (HTML report)
+
+## Test Flow
 1. Extract the **"Debugging features"** section:
    - Via **UI** using the Page Object Model (POM) approach.
    - Via **API** using the MediaWiki Parse API.
 2. Normalize both texts.
-3. Count **unique words** in each.
-4. **Assert** that both counts are equal.
+3. Count unique words in each.
+4. Compare and Assert that both counts are equal.
 
 ## Test Result
 1. HTML report generated.
@@ -17,6 +22,7 @@ A lightweight automation framework with one test that compares **UI** and **API*
 ## Tech Stack
 - **Programming Languages:** C#, JS
 - **Test Automation:** Playwright
+- **.Net Version** 8.0
 
 ## How to Run
 1. Clone the repository:
@@ -40,9 +46,13 @@ A lightweight automation framework with one test that compares **UI** and **API*
    dotnet test --logger "console;verbosity=detailed"
    ```
 
-4. Open HTML report
-   - HTML Report generated under the *TestReports* folder under Project Root
+4. HTML report
+   - **HTML Report** generated under the *TestReports* folder under Project Root
    - There is no option to see the run history. Just the last run available
+   - Report shows performed test step, intermediate results and assertions
 
-5. Misc
-   Developed and tested on macOS only
+5. Known Limitations and future work
+   - Developed and tested on ***macOS*** only
+
+6. GitHub repository link
+   <br>https://github.com/StasLevin/genpact
